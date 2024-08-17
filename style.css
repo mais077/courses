@@ -2,6 +2,7 @@
     --blue: #3F2AFF;
     --blue-dark: #1e128b;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -83,9 +84,10 @@ button {
     border: 2px solid var(--blue);
     background-color: transparent;
     padding: 25px 76px;
-    transition-property: background-color, color, border-color ;
+    transition-property: background-color, color, border-color;
     transition-duration: .3s;
 }
+
 .primary-btn:hover {
     background-color: var(--blue);
     color: white;
@@ -95,4 +97,27 @@ button {
     background-color: var(--blue-dark);
     color: white;
     border-color: var(--blue-dark);
+}
+
+.home-link {
+    color: var(--blue);
+    transition: color .3s;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    color: var(--blue-dark);
+}
+
+.home-link svg path {
+    fill: var(--blue);
+    transition: fill .3s;
+}
+
+.home-link:hover svg path {
+    fill: var(--blue-dark);
 }
