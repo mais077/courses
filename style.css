@@ -107,6 +107,9 @@ button {
     line-height: 23px;
     text-align: left;
     text-decoration: none;
+    gap: 7px;
+    display: inline-flex;
+    align-items:center;
 }
 
 .home-link:hover {
@@ -120,4 +123,10 @@ button {
 
 .home-link:hover svg path {
     fill: var(--blue-dark);
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
