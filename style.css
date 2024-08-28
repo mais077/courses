@@ -44,10 +44,15 @@ body {
     list-style: none;
 }
 
+.cards-list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
 .card {
-    display: inline-block;
-    margin-right: 25px;
-    margin-bottom: 25px;
+    width: 550px;
+    flex-shrink: 0;
     background-color: white;
     vertical-align: top;
     box-shadow: 0px 0px 40px 0px #0000001A;
@@ -86,6 +91,7 @@ button {
     padding: 25px 76px;
     transition-property: background-color, color, border-color;
     transition-duration: .3s;
+    /* margin-top: 50px; */
 }
 
 .primary-btn:hover {
@@ -109,7 +115,7 @@ button {
     text-decoration: none;
     gap: 7px;
     display: inline-flex;
-    align-items:center;
+    align-items: center;
 }
 
 .home-link:hover {
@@ -140,4 +146,10 @@ button {
 
 main {
     padding: 50px 0;
+}
+
+.btn-wrap {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
